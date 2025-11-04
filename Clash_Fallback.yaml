@@ -45,6 +45,7 @@ proxy-providers:
 proxies:
 - name: 🎯 直连
   type: direct
+  udp: true
 
 # ============== 核心配置 ==============
 # 基础配置
