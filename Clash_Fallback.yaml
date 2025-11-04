@@ -102,8 +102,9 @@ profile:
 # DNS 配置
 dns:
   enable: true                                                              # 是否启用，如为 false，则使用系统 DNS 解析
-  cache-algorithm: lru                                                      # DNS 缓存算法
+  cache-algorithm: arc                                                      # DNS 缓存算法
   cache-max-size: 8192                                                      # DNS 缓存数
+  prefer-h3: false                                                          # 禁用 http/3
   listen: 0.0.0.0:7874                                                      # DNS 服务监听端口
   ipv6: true                                                                # 是否解析 IPV6
   enhanced-mode: fake-ip                                                    # 增强模式 Fake-IP模式（核心：本地解析+无泄漏）
