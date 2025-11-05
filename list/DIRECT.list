@@ -2,5 +2,10 @@
 DOMAIN-SUFFIX,benchen.xyz
 DOMAIN-SUFFIX,695675.xyz
 
+# dns
+IP-CIDR,8.8.8.8/32
+IP-CIDR,8.8.4.4/32
+IP-CIDR,1.1.1.1/32
+
 # ai
 DOMAIN-SUFFIX,openrouter.ai
