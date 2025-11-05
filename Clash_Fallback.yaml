@@ -117,17 +117,17 @@ dns:
   - 'time.*.com'                                                            # 时间同步  常见的网络时间同步(NTP)服务器域名，保证时间校准准确
   respect-rules: true                                                       # 连接遵守路由规则，需配置 proxy-server-nameserver
   default-nameserver:                                                       # 默认 DNS, 用于解析 DNS 服务器 的域名
-  - 223.5.5.5
-  - 119.29.29.29
+  - tls://223.5.5.5
+  - tls://223.6.6.6
   proxy-server-nameserver:                                                  # 代理节点域名解析服务器，仅用于解析代理节点的域名
   - https://dns.alidns.com/dns-query
   nameserver:                                                               # DNS 服务地址 提高解析速度请使用运营商提供的 DNS
-  - 223.5.5.5
-  - 119.29.29.29
+  - tls://223.5.5.5
+  - tls://223.6.6.6
   nameserver-policy:
     'rule-set:domain-geolocation-!cn':
-    - dns.google
-    - one.one.one.one
+    - tls://8.8.8.8
+    - tls://1.1.1.1
 
 # 嗅探域名
 sniffer:
