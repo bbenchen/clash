@@ -144,13 +144,9 @@ sniffer:
     QUIC:
       ports: [ 443, 8443 ]
   skip-domain:
-  - 'rule-set:domain-private,domain-cn'
+  - 'rule-set:domain-private,domain-cn,domain-apple'
   force-domain:
-  - '+.google.com'
-  - '+.netflix.com'
-  - "+.nflxvideo.net"
-  - "+.amazonaws.com"
-  - "+.media.dssott.com"
+  - 'rule-set:domain-google,domain-netflix,domain-disney,domain-hbo'
 
 # TUN 配置
 tun:
