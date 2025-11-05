@@ -144,7 +144,7 @@ sniffer:
     QUIC:
       ports: [ 443, 8443 ]
   skip-domain:
-  - 'rule-set:domain-private,domain-cn,domain-apple'
+  - 'rule-set:domain-private,domain-cn,domain-apple-cn'
   force-domain:
   - 'rule-set:domain-google,domain-netflix,domain-disney,domain-hbo'
 
