@@ -79,7 +79,7 @@ skip-auth-prefixes:                                                         # �
 # 地理数据配置
 geodata-mode: false                                                         # 数据模式 true=dat模式, false=mmdb模式
 geodata-loader: standard                                                    # 加载模式 standard=标准加载器, memconservative=小内存加载器（默认值）
-geo-auto-update: false                                                      # 自动更新
+geo-auto-update: true                                                       # 自动更新
 geo-update-interval: 24                                                     # 更新间隔 24小时
 geox-url:
   # geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
@@ -115,6 +115,11 @@ dns:
   - '+.msftconnecttest.com'                                                 # 连接检测  Windows网络连接检测域名，避免系统误判网络状态
   - '+.msftncsi.com'                                                        # 状态检测  Windows网络状态指示器域名，确保NCSI检测正常
   - 'time.*.com'                                                            # 时间同步  常见的网络时间同步(NTP)服务器域名，保证时间校准准确
+  # 机场相关
+  - '+.doggygo.top'
+  - '+.jisusub.cc'
+  - '+.ei38d3if3.xyz'
+  - '+.367123.xyz'
   respect-rules: true                                                       # 连接遵守路由规则，需配置 proxy-server-nameserver
   default-nameserver:                                                       # 默认 DNS, 用于解析 DNS 服务器 的域名
   - tls://223.5.5.5
