@@ -115,6 +115,9 @@ dns:
   - '+.msftconnecttest.com'                                                 # 连接检测  Windows网络连接检测域名，避免系统误判网络状态
   - '+.msftncsi.com'                                                        # 状态检测  Windows网络状态指示器域名，确保NCSI检测正常
   - 'time.*.com'                                                            # 时间同步  常见的网络时间同步(NTP)服务器域名，保证时间校准准确
+  # 个人相关
+  - '+.benchen.xyz'
+  - '+.695675.xyz'
   # 机场相关
   - '+.doggygo.top'
   - '+.jisusub.cc'
