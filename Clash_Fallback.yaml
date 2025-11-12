@@ -119,11 +119,19 @@ dns:
   - '+.benchen.xyz'
   - '+.695675.xyz'
   # 机场相关
-  - '+.doggygo.top'
+  # 狗狗加速
   - '+.doggygosubs.com'
+  - '+.cloudfrontcdn.com'
+  - '+.networklinkpro.com'
+  # 极速Max
   - '+.jisusub.cc'
+  - '+.jiserserseerl.xyz'
+  # 星链
   - '+.ei38d3if3.xyz'
+  # 都是梦
   - '+.367123.xyz'
+  - '+.473221.xyz'
+  - '+.7896543.xyz'
   respect-rules: true                                                       # 连接遵守路由规则，需配置 proxy-server-nameserver
   default-nameserver:                                                       # 默认 DNS, 用于解析 DNS 服务器 的域名
   - tls://223.5.5.5
