@@ -186,6 +186,7 @@ proxy-groups:
 - {name: 🧑 WhatsApp, <<: *pr}
 - {name: 🧑 Twitter, <<: *pr}
 - {name: 🌐 Google, <<: *pr}
+- {name: ☁ Cloudflare, <<: *pr}
 - {name: 🍎 Apple, <<: *pr}
 - {name: 🏢 Microsoft, <<: *pr}
 - {name: 🎮 Steam, <<: *pr}
@@ -256,6 +257,8 @@ rules:
 - RULE-SET,domain-google-cn,🎯 直连
 - RULE-SET,ip-google,🌐 Google,no-resolve
 - RULE-SET,domain-google,🌐 Google
+- RULE-SET,ip-cloudflare,☁ Cloudflare,no-resolve
+- RULE-SET,domain-cloudflare,☁ Cloudflare
 - RULE-SET,domain-apple-cn,🎯 直连
 - RULE-SET,domain-apple,🍎 Apple
 - RULE-SET,domain-microsoft,🏢 Microsoft
@@ -297,6 +300,7 @@ rule-providers:
   domain-twitter: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs' }
   domain-google-cn: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google@cn.mrs' }
   domain-google: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs' }
+  domain-cloudflare: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.mrs' }
   domain-apple-cn: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple@cn.mrs' }
   domain-apple: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs' }
   domain-microsoft: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs' }
@@ -318,4 +322,5 @@ rule-providers:
   ip-telegram: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs' }
   ip-twitter: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/twitter.mrs' }
   ip-google: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs' }
+  ip-cloudflare: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.mrs' }
   ip-cn: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs' }
