@@ -257,6 +257,7 @@ rules:
 - RULE-SET,domain-google-cn,🎯 直连
 - RULE-SET,ip-google,🌐 Google,no-resolve
 - RULE-SET,domain-google,🌐 Google
+- RULE-SET,domain-cloudflare-cn,🎯 直连
 - RULE-SET,ip-cloudflare,☁ Cloudflare,no-resolve
 - RULE-SET,domain-cloudflare,☁ Cloudflare
 - RULE-SET,domain-apple-cn,🎯 直连
@@ -300,6 +301,7 @@ rule-providers:
   domain-twitter: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs' }
   domain-google-cn: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google@cn.mrs' }
   domain-google: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs' }
+  domain-cloudflare-cn: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare@cn.mrs' }
   domain-cloudflare: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.mrs' }
   domain-apple-cn: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple@cn.mrs' }
   domain-apple: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs' }
