@@ -7,7 +7,7 @@
 
 # ============== 锚点区域 ==============
 # 订阅锚点
-proxy-providers-anchor: &pproviders {type: http, interval: 86400, proxy: 🎯 直连, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}}
+proxy-providers-anchor: &pproviders {type: http, interval: 86400, proxy: 🎯 直连, header: {User-Agent: ['mihomo.party/v1.8.8 (clash.meta)', 'mihomo/1.19.12']}, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}}
 
 # 代理出站锚点
 proxy-anchor: &pr {type: select, proxies: [🎯 直连, 👆 所有手动, ♻️ 所有自动, 🇭🇰 香港故转, 🇨🇳 台湾故转, 🇯🇵 日本故转, 🇸🇬 新加坡故转, 🇰🇷 韩国故转, 🇺🇸 美国故转, 🇪🇺 欧洲故转, 🌐 其他故转]}
