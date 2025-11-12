@@ -254,7 +254,6 @@ rules:
 - RULE-SET,domain-whatsapp,🧑 WhatsApp
 - RULE-SET,ip-twitter,🧑 Twitter,no-resolve
 - RULE-SET,domain-twitter,🧑 Twitter
-- RULE-SET,domain-google-cn,🎯 直连
 - RULE-SET,ip-google,🌐 Google,no-resolve
 - RULE-SET,domain-google,🌐 Google
 - RULE-SET,domain-cloudflare-cn,🎯 直连
@@ -299,7 +298,6 @@ rule-providers:
   domain-instagram: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.mrs' }
   domain-whatsapp: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/whatsapp.mrs' }
   domain-twitter: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs' }
-  domain-google-cn: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google@cn.mrs' }
   domain-google: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs' }
   domain-cloudflare-cn: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare@cn.mrs' }
   domain-cloudflare: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cloudflare.mrs' }
