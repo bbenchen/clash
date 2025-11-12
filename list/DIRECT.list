@@ -14,3 +14,6 @@ DOMAIN-SUFFIX,openrouter.ai
 
 # github proxy
 DOMAIN-SUFFIX,gh-proxy.com
+
+# go proxy
+DOMAIN-SUFFIX,goproxy.cn
