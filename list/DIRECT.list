@@ -17,3 +17,7 @@ DOMAIN-SUFFIX,gh-proxy.com
 
 # go proxy
 DOMAIN-SUFFIX,goproxy.cn
+
+# google download
+DOMAIN,dl.google.com
+DOMAIN,dl.l.google.com
