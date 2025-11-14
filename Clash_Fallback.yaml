@@ -239,7 +239,8 @@ proxy-groups:
 rules:
 - RULE-SET,personal-direct,🎯 直连
 - RULE-SET,personal-reject,REJECT
-- RULE-SET,domain-ads,REJECT-DROP
+- RULE-SET,banad,REJECT-DROP
+- RULE-SET,category-ads,REJECT-DROP
 - RULE-SET,ip-private,🎯 直连,no-resolve
 - RULE-SET,domain-private,🎯 直连
 - RULE-SET,ip-cn,🎯 直连,no-resolve
@@ -288,8 +289,11 @@ rule-providers:
   personal-direct: { <<: *class, url: 'https://gh-proxy.com/github.com/bbenchen/clash/raw/refs/heads/main/list/DIRECT.list'}
   personal-reject: { <<: *class, url: 'https://gh-proxy.com/github.com/bbenchen/clash/raw/refs/heads/main/list/REJECT.list'}
 
+  # 广告
+  banad: { <<: *class, url: 'https://gh-proxy.com/github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/BanAD.list'}
+  category-ads: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ads.mrs' }
+
   # 域名规则
-  domain-ads: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ads@ads.mrs' }
   domain-private: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs' }
   domain-speedtest-cn: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-speedtest@cn.mrs' }
   domain-speedtest: { <<: *domain, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-speedtest.mrs' }
