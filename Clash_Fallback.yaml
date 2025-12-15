@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://gh-proxy.com/raw.githubusercontent.com/dongchengjie/meta-json-schema/refs/heads/main/schemas/meta-json-schema.json
 # 名称: Clash_Fallback
-# 版本: v1.2
+# 版本: v1.3
 # 日期: 2025-11-03
 # 地址: https://github.com/bbenchen/clash
 ---
@@ -262,7 +262,6 @@ rules:
 - RULE-SET,domain-telegram,🧑 Telegram
 - RULE-SET,domain-instagram,🧑 Instagram
 - RULE-SET,domain-whatsapp,🧑 WhatsApp
-- RULE-SET,ip-twitter,🧑 Twitter,no-resolve
 - RULE-SET,domain-twitter,🧑 Twitter
 - RULE-SET,ip-google,🌐 Google,no-resolve
 - RULE-SET,domain-google,🌐 Google
@@ -333,7 +332,6 @@ rule-providers:
   ip-private: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs' }
   ip-netflix: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs' }
   ip-telegram: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs' }
-  ip-twitter: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/twitter.mrs' }
   ip-google: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs' }
   ip-cloudflare: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cloudflare.mrs' }
   ip-cn: { <<: *ip, url: 'https://gh-proxy.com/github.com/metacubex/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs' }
