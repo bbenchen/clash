@@ -11,6 +11,7 @@ DOMAIN,dns.cloudflare.com
 
 # ai
 DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,qoder.sh
 
 # github proxy
 DOMAIN-SUFFIX,gh-proxy.com
