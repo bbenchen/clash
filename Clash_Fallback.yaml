@@ -131,7 +131,7 @@ dns:
   - '+.usdone.one'
   - 'tsaocsac.gulangaizhuanfa.top'
   # 都是梦
-  - 'puuppq.subdsm.top'
+  - '+.subdsm.top'
   - '+.473221.xyz'
   - '+.7896543.xyz'
   respect-rules: true                                                       # 连接遵守路由规则，需配置 proxy-server-nameserver
