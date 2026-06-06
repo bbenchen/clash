@@ -15,6 +15,9 @@ DOMAIN-SUFFIX,qoder.sh
 DOMAIN,openkey.cloud
 DOMAIN-SUFFIX,poixe.com
 
+# mcp
+DOMAIN,mcp.grep.app
+
 # github proxy
 DOMAIN-SUFFIX,gh-proxy.com
 
